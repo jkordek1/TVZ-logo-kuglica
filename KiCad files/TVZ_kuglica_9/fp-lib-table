@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name TVZ_kuglica)(type KiCad)(uri ${KIPRJMOD}/TVZ_kuglica.pretty)(options "")(descr ""))
+)

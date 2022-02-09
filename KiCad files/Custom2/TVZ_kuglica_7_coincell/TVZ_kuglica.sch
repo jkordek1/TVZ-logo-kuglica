@@ -1,0 +1,231 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 61694F6D
+P 3100 3350
+F 0 "BT1" H 3218 3446 50  0000 L CNN
+F 1 "2xAAA" H 3218 3355 50  0000 L CNN
+F 2 "TVZ_kuglica:MYOUNG_BS-08-B2AA016" V 3100 3410 50  0001 C CNN
+F 3 "~" V 3100 3410 50  0001 C CNN
+	1    3100 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D6
+U 1 1 6169D1A8
+P 6000 3200
+F 0 "D6" V 5954 3298 50  0000 L CNN
+F 1 "RGB" V 6045 3298 50  0000 L CNN
+F 2 "TVZ_kuglica:LED-0807" V 6000 3200 50  0001 C CNN
+F 3 "~" V 6000 3200 50  0001 C CNN
+	1    6000 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 2875 6000 2725
+Wire Wire Line
+	6000 3300 6000 3525
+$Comp
+L Device:LED_Small D8
+U 1 1 6169D1B8
+P 6800 3200
+F 0 "D8" V 6754 3298 50  0000 L CNN
+F 1 "RGB" V 6845 3298 50  0000 L CNN
+F 2 "TVZ_kuglica:LED-0807" V 6800 3200 50  0001 C CNN
+F 3 "~" V 6800 3200 50  0001 C CNN
+	1    6800 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 2875 6800 2725
+Wire Wire Line
+	6800 3300 6800 3525
+Connection ~ 6000 2725
+Connection ~ 6000 3525
+Connection ~ 6800 2725
+Connection ~ 6800 3525
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 616A35DD
+P 3650 2825
+F 0 "SW1" H 3650 3110 50  0000 C CNN
+F 1 "SW_SPDT" H 3650 3019 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 3650 2825 50  0001 C CNN
+F 3 "~" H 3650 2825 50  0001 C CNN
+	1    3650 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3525 3100 3450
+Wire Wire Line
+	3450 2825 3100 2825
+NoConn ~ 3850 2925
+$Comp
+L power:GND #PWR0101
+U 1 1 616A6128
+P 3100 3575
+F 0 "#PWR0101" H 3100 3325 50  0001 C CNN
+F 1 "GND" H 3105 3402 50  0000 C CNN
+F 2 "" H 3100 3575 50  0001 C CNN
+F 3 "" H 3100 3575 50  0001 C CNN
+	1    3100 3575
+	1    0    0    -1  
+$EndComp
+Connection ~ 3100 3525
+Wire Wire Line
+	3100 3575 3100 3525
+$Comp
+L power:VCC #PWR0102
+U 1 1 616A7378
+P 3100 2775
+F 0 "#PWR0102" H 3100 2625 50  0001 C CNN
+F 1 "VCC" H 3115 2948 50  0000 C CNN
+F 2 "" H 3100 2775 50  0001 C CNN
+F 3 "" H 3100 2775 50  0001 C CNN
+	1    3100 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2775 3100 2825
+Connection ~ 3100 2825
+Text Notes 750  7350 0    50   ~ 0
+TO-DO:\n- napraviti coin cell verziju (smanjiti broj LEDica - pitati Lavrića)\n- staviti svoj logo iza\n- provjeriti rupu gore\n- pronaći nešto za donji dio (oni darovi i drvca)\n- saonice na tvz\n- kapa na tvz
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 616C3082
+P 3100 2825
+F 0 "#FLG0101" H 3100 2900 50  0001 C CNN
+F 1 "PWR_FLAG" V 3100 2952 50  0000 L CNN
+F 2 "" H 3100 2825 50  0001 C CNN
+F 3 "~" H 3100 2825 50  0001 C CNN
+	1    3100 2825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 616C4247
+P 3100 3525
+F 0 "#FLG0102" H 3100 3600 50  0001 C CNN
+F 1 "PWR_FLAG" V 3100 3652 50  0000 L CNN
+F 2 "" H 3100 3525 50  0001 C CNN
+F 3 "~" H 3100 3525 50  0001 C CNN
+	1    3100 3525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D12
+U 1 1 616C640A
+P 8400 3200
+F 0 "D12" V 8354 3298 50  0000 L CNN
+F 1 "RGB" V 8445 3298 50  0000 L CNN
+F 2 "TVZ_kuglica:LED-0807" V 8400 3200 50  0001 C CNN
+F 3 "~" V 8400 3200 50  0001 C CNN
+	1    8400 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 2875 8400 2725
+Wire Wire Line
+	8400 3300 8400 3525
+Wire Wire Line
+	6800 2725 8400 2725
+Wire Wire Line
+	6800 3525 8400 3525
+Wire Wire Line
+	6000 2725 6800 2725
+Wire Wire Line
+	6000 3525 6800 3525
+Wire Wire Line
+	3850 2725 5275 2725
+Wire Wire Line
+	3100 3525 5275 3525
+$Comp
+L Device:R_Small R1
+U 1 1 616DDB1F
+P 6000 2975
+F 0 "R1" H 6059 3021 50  0000 L CNN
+F 1 "2k" V 6000 2925 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6000 2975 50  0001 C CNN
+F 3 "~" H 6000 2975 50  0001 C CNN
+	1    6000 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3075 6000 3100
+$Comp
+L Device:R_Small R2
+U 1 1 616DEA24
+P 6800 2975
+F 0 "R2" H 6859 3021 50  0000 L CNN
+F 1 "2k" V 6800 2925 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6800 2975 50  0001 C CNN
+F 3 "~" H 6800 2975 50  0001 C CNN
+	1    6800 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 616DEF11
+P 8400 2975
+F 0 "R3" H 8459 3021 50  0000 L CNN
+F 1 "2k" V 8400 2925 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 2975 50  0001 C CNN
+F 3 "~" H 8400 2975 50  0001 C CNN
+	1    8400 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3075 8400 3100
+Wire Wire Line
+	6800 3075 6800 3100
+Wire Wire Line
+	3100 2825 3100 3150
+$Comp
+L Device:LED_Small D7
+U 1 1 616E6F9A
+P 5275 3200
+F 0 "D7" V 5229 3298 50  0000 L CNN
+F 1 "RGB" V 5320 3298 50  0000 L CNN
+F 2 "TVZ_kuglica:LED-0807" V 5275 3200 50  0001 C CNN
+F 3 "~" V 5275 3200 50  0001 C CNN
+	1    5275 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5275 2875 5275 2725
+Wire Wire Line
+	5275 3300 5275 3525
+$Comp
+L Device:R_Small R4
+U 1 1 616E6FA2
+P 5275 2975
+F 0 "R4" H 5334 3021 50  0000 L CNN
+F 1 "2k" V 5275 2925 39  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5275 2975 50  0001 C CNN
+F 3 "~" H 5275 2975 50  0001 C CNN
+	1    5275 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5275 3075 5275 3100
+Connection ~ 5275 2725
+Wire Wire Line
+	5275 2725 6000 2725
+Connection ~ 5275 3525
+Wire Wire Line
+	5275 3525 6000 3525
+$EndSCHEMATC
