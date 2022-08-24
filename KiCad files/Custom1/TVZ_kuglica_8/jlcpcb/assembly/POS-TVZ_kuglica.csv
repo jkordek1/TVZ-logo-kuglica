@@ -1,0 +1,15 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+BT1,Battery,2xAAA-422-SMT,137.0,-100.0,180.0,bottom
+D2,RGB,LED-0807,123.5,-74.75,0.0,top
+D3,RGB,LED-0807,146.0,-76.5,180.0,top
+D5,RGB,LED-0807,112.5,-112.0,0.0,top
+D7,RGB,LED-0807,137.0,-130.0,0.0,top
+D8,RGB,LED-0807,164.25,-105.0,0.0,top
+D11,RGB,LED-0807,139.5,-94.0,0.0,top
+R2,2k,R_0603_1608Metric,119.75,-74.75,0.0,bottom
+R3,2k,R_0603_1608Metric,151.5,-76.5,180.0,bottom
+R5,2k,R_0603_1608Metric,108.75,-112.0,0.0,bottom
+R6,2k,R_0603_1608Metric,123.5,-123.5,0.0,bottom
+R7,2k,R_0603_1608Metric,160.5,-105.0,0.0,bottom
+R8,2k,R_0603_1608Metric,122.7,-94.0,0.0,bottom
+SW1,SW_SPDT,SW_SPDT_PCM12,104.5,-99.75,90.0,bottom
